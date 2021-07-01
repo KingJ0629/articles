@@ -1,4 +1,4 @@
-这篇文章是对上一篇文章的一些内容补充和详细分析 [上一篇](https://github.com/KingJ0629/articles/tree/main)
+这篇文章是对上一篇文章的一些内容补充和详细分析 [上一篇](https://github.com/KingJ0629/articles/blob/main/%E8%B7%A8%E8%BF%9B%E7%A8%8B%E6%96%87%E4%BB%B6%E5%85%B1%E4%BA%AB%E6%96%B9%E6%A1%88.md)
 
 ### 文件描述符
 
