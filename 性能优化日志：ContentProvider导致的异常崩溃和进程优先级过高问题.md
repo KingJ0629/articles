@@ -8,7 +8,7 @@
 
 #### 解决方案
 解决方案就是通过反射主动去拿unstableProvider,自己掌握自己的命运。代码如下：
-```
+```java
 ContentResolver resolver = context.getContentResolver();
 
 // ReflectionUnit是个反射工具类 封装了些catch操作
@@ -60,7 +60,7 @@ try {
 ### 解决方案
 源码中`releaseUnstableProvider`是个抽象方法，我们要去找到真正的实现类`ContextImpl$ApplicationContentResolver`。
 
-```
+```java
 Class<?> ApplicationContentResolverClass = Class.forName("android.app.ContextImpl$ApplicationContentResolver");
 Method releaseUnstableProviderMethod = ApplicationContentResolverClass.getMethod("releaseUnstableProvider", IContentProvider.class);
 releaseUnstableProviderMethod.setAccessible(true);
